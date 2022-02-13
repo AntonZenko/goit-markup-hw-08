@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html">Web<span class="logo__studio">Studio</span></a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link current" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="images/icons.svg#icon-smartphone"></use>
+              </svg>
+
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects">
+        <div class="container">
+          <div class="projects__menu">
+            <h1 class="projects__title visually-hidden">Наши работы</h1>
+
+            <ul class="projects__list">
+              <li class="projects__item">
+                <button class="projects__btn" type="button">Все</button>
+              </li>
+
+              <li class="projects__item">
+                <button class="projects__btn" type="button">Веб-сайты</button>
+              </li>
+
+              <li class="projects__item">
+                <button class="projects__btn" type="button">Приложения</button>
+              </li>
+
+              <li class="projects__item">
+                <button class="projects__btn" type="button">Дизайн</button>
+              </li>
+
+              <li class="projects__item">
+                <button class="projects__btn" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="cards">
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <article>
+                  <div class="cards__thumb">
+                    <img src="./images/laptop.jpg" alt="laptop" width="370" />
+                    <div class="overlay">
+                      <p class="overlay__text">
+                        Технокряк это современная площадка распространения коронавируса. Компании
+                        используют эту платформу для цифрового шпионажа и атак на защищённыесервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="cards__content">
+                    <h2 class="cards__heading">Технокряк</h2>
+                    <p class="cards__text">Веб-сайт</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/basketball.jpg" alt="basketball" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Постер New Orlean vs Golden Star</h2>
+                  <p class="cards__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/restaurant.jpg" alt="restaurant" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Ресторан Seafood</h2>
+                  <p class="cards__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/headphones.jpg" alt="headphones" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Проект Prime</h2>
+                  <p class="cards__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/boxes.jpg" alt="boxes" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Проект Boxes</h2>
+                  <p class="cards__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/display.jpg" alt="display" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Inspiration has no Borders</h2>
+                  <p class="cards__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/book.jpg" alt="book" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Издание Limited Edition</h2>
+                  <p class="cards__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/lab.jpg" alt="lab" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Проект LAB</h2>
+                  <p class="cards__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="cards__item">
+              <a class="cards__link" href="#">
+                <div class="cards__thumb">
+                  <img src="./images/laptop-buisness.jpg" alt="/laptop-buisness" width="370" />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis facere quis
+                      incidunt vitae a dicta?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__content">
+                  <h2 class="cards__heading">Growing Business</h2>
+                  <p class="cards__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__nav">
+          <a class="footer__logo logo" href="./index.html"
+            >Web<span class="logo__studio--footer">Studio</span></a
+          >
+
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a class="address__link map" href="https://goo.gl/maps/qqgk2p5hBDQdTE4w5"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer--social__box">
+          <h3 class="footer__title">присоединяйтесь</h3>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link footer--social__link" href="#">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link footer--social__link" href="#">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link footer--social__link" href="#">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link footer--social__link" href="#">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <form class="subscribe__form" action="#">
+            <label class="subscribe__title" for="subscribe-email">Подпишитесь на рассылку</label>
+            <input
+              class="subscribe__input"
+              name="email"
+              id="subscribe-email"
+              type="email"
+              placeholder="E-mail"
+            />
+          </form>
+          <button class="btn__subscribe btn" type="submit">
+            Подписаться
+            <svg class="subscribe__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.work__title,
+.members__title,
+.customers__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  color: var(--title-text-color);
+}
+/*# sourceMappingURL=section-titles.css.map */
