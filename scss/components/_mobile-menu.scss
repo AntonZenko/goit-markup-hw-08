@@ -1,20 +1,24 @@
 .mob {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-  transform: translateX(100%);
-  background-color: $base-white-color;
-  transition: transform $transition;
-  @media screen and (min-width:768px){
-    display: none;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    // padding: 48px 40px 70px 40px;
+    transform: translateX(100%);
+    background-color: $base-white-color;
+    transition: transform $transition;
+    @media screen and (min-width:768px){
+        display: none;
+    }
 }
 
 .menu-container.is-open .mob{
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .menu-toggle-close {
@@ -50,11 +54,6 @@
     }
 }
 
-.menu--contacts {
-    margin-top: 302px;
-    text-align: start;
-    justify-content: start;
-}
 
 .menu--contacts__item {
     & + & {

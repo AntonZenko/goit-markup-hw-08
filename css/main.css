@@ -464,6 +464,16 @@ body {
 }
 
 .mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -519,14 +529,6 @@ body {
 
 .menu__link:hover, .menu__link:focus {
   color: #2196f3;
-}
-
-.menu--contacts {
-  margin-top: 302px;
-  text-align: start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 
 .menu--contacts__item + .menu--contacts__item {
