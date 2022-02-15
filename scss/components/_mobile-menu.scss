@@ -1,0 +1,118 @@
+.mob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  transform: translateX(100%);
+  background-color: $base-white-color;
+  transition: transform $transition;
+  @media screen and (min-width:768px){
+    display: none;
+  }
+}
+
+.menu-container.is-open .mob{
+  transform: translateX(0);
+}
+
+.menu-toggle-close {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    border: none;
+    background-color: transparent;
+    transition: $transition;
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+
+
+.menu__item {
+    & + & {
+        margin-top: 30px;
+    }
+}
+
+.menu__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 0.67;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.menu--contacts {
+    margin-top: 302px;
+    text-align: start;
+    justify-content: start;
+}
+
+.menu--contacts__item {
+    & + & {
+        margin-top: 32px;
+    }
+}
+.menu--contacts__tel {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
+}
+
+.menu--contacts__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.mob__social {
+    display: flex;
+    margin-top: 64px;
+    flex-wrap: wrap;
+}
+
+.mob__social--item:not(:last-child):after {
+    content: "";
+    background-color: $primary-text-color;
+    width: 1px;
+    height: 22px;
+    margin-left: 10px;
+}
+
+.mob__social--item {
+    display: flex;
+    align-items: center;
+    & + & {
+        margin-left: 10px;
+    }
+}
+
+.mob__social--link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+}

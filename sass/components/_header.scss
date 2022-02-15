@@ -192,10 +192,7 @@
   height: 16px;
 }
 
-.menu-container {
-  overflow-y: scroll;
-  height: 100%;
-}
+
 
 .menu-toggle-open {
   display: flex;
@@ -280,6 +277,11 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.menu-container {
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .menu-container.is-hidden {

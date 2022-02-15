@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CACZ,eAAe,CACf,iBAAiB,AAAC,CAChB,WAAW,CAAE,IAAI,CACjB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,UAAU,CAAE,MAAM,CAClB,aAAa,CAAE,IAAI,CACnB,WAAW,CAAE,IAAI,CAEjB,KAAK,CAAE,uBAAuB,CAC/B",
+    "sources": [
+        "../scss/components/section-titles.scss"
+    ],
+    "names": [],
+    "file": "section-titles.min.css"
+}
